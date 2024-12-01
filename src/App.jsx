@@ -1,10 +1,11 @@
 import "./App.scss"
+import Modal from "./components/Modal/Modal"
 
 function App() {
   return (
-    <>
-      <h1>Hi</h1>
-    </>
+    <div className="modal-container">
+      <Modal />
+    </div>
   )
 }
 
