@@ -152,6 +152,10 @@
     border-radius: $border-radius;
     width: 65%;
     padding: 7px 14px;
+    background-image: url("./celebration.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     .price {
       color: #77aa00;
