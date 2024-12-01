@@ -1,0 +1,26 @@
+.w-100 {
+  width: 100%;
+}
+
+.center-el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.px {
+  padding: 0 16px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
