@@ -1,4 +1,28 @@
-h1 {
-  color: #fff;
-  background: #000;
+.open-modal-btn {
+  padding: 12px 24px;
+  background-color: #8e8e8e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+
+  &:hover {
+    background-color: #7a7a7a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }

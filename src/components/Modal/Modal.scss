@@ -2,12 +2,37 @@
 
 .modal {
   max-width: 400px;
+  min-height: 90vh;
   background-color: white;
   margin: 20px auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  overflow-y: auto;
+  max-height: 90vh;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in forwards;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   @media screen and (max-width: 480px) {
-    margin-top: 200px;
     border-radius: 12px;
     text-align: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
