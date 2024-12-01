@@ -1,0 +1,19 @@
+@import "../../root";
+
+.card {
+  border-radius: $border-radius;
+  border: 1px solid #cdcdcd;
+  padding: 8px 12px;
+  margin-top: 50px;
+  width: 150px;
+
+  .amount {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 12px;
+    color: #333333;
+  }
+}
