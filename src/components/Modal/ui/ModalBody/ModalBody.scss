@@ -1,0 +1,54 @@
+@import "../../../../root";
+
+.modal-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.container-padding {
+  padding: 12px;
+}
+
+.notice {
+  border: 1px solid #eee;
+  border-radius: $border-width;
+
+  .notice-instruction {
+    display: flex;
+    @extend .container-padding;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .warning-icon {
+    // after adding figma size the icon looking smaller
+    width: 32px;
+    height: 32px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .promotion {
+    @extend .container-padding;
+    display: flex;
+    align-items: center;
+    gap: $border-width;
+    background: linear-gradient(to right, #e6f9ff, #f3ffe0);
+    border-bottom-left-radius: $border-width;
+    border-bottom-right-radius: $border-width;
+
+    .like-icon {
+      width: 24px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+  }
+}
