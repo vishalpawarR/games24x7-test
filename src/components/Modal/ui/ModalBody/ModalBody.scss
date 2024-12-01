@@ -64,11 +64,19 @@
     // font size is looking to small here
     font-size: 15px;
 
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
     .benefits_earned {
       font-size: 15px;
       font-weight: 700;
       margin-left: auto;
       color: #77aa00;
+
+      @media screen and (max-width: 480px) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -80,6 +88,10 @@
     font-size: 18px;
     margin-top: 28px;
     margin-bottom: 22px;
+
+    @media screen and (max-width: 480px) {
+      margin-top: 9px;
+    }
   }
 
   .offer {
@@ -145,6 +157,10 @@
   align-items: center;
   position: relative;
 
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+
   .gst-benefits {
     font-size: 12px;
     text-align: left;
@@ -157,6 +173,11 @@
     background-position: center;
     background-size: cover;
 
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
+
     .price {
       color: #77aa00;
       font-size: 20px;
@@ -166,17 +187,32 @@
       display: flex;
       align-items: center;
       gap: 5px;
+
+      @media screen and (max-width: 480px) {
+        justify-content: center;
+      }
     }
     .arrow-forward {
       position: absolute;
       right: 90px;
       top: 50%;
       transform: translateY(-50%);
+
+      @media screen and (max-width: 480px) {
+        rotate: 90deg;
+        right: 50%;
+      }
     }
   }
   .user-offer {
     text-align: right;
     margin-left: auto;
+
+    @media screen and (max-width: 480px) {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 40px;
+    }
 
     .user-gets {
       color: #77aa00;
@@ -187,6 +223,7 @@
 
     p:last-child {
       font-size: 14px;
+      color: #747474;
     }
   }
 }
