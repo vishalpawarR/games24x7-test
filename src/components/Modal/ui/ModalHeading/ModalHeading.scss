@@ -8,9 +8,25 @@
   align-items: center;
   background-color: #8e8e8e;
   color: #fff;
+
+  @media screen and (max-width: 480px) {
+    border-radius: 12px;
+    color: #333333;
+    background-color: #fff;
+    padding-top: 24px;
+
+    h3 {
+      width: 95%;
+    }
+  }
 }
 
 .close {
   width: 22px;
   height: 22px;
+
+  @media screen and (max-width: 480px) {
+    width: 18px;
+    height: 18px;
+  }
 }
