@@ -1,10 +1,5 @@
-.center-el {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "../../root";
 
 .modal {
-  @extend .center-el;
   max-width: 400px;
 }
