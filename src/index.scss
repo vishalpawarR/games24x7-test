@@ -69,3 +69,14 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
