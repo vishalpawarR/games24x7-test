@@ -14,7 +14,7 @@
 
 .notice {
   border: 1px solid #eee;
-  border-radius: $border-width;
+  border-radius: $border-radius;
 
   .notice-instruction {
     display: flex;
@@ -38,10 +38,10 @@
     @extend .container-padding;
     display: flex;
     align-items: center;
-    gap: $border-width;
+    gap: $border-radius;
     background: linear-gradient(to right, #e6f9ff, #f3ffe0);
-    border-bottom-left-radius: $border-width;
-    border-bottom-right-radius: $border-width;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
 
     .like-icon {
       width: 24px;
